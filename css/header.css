@@ -9,9 +9,12 @@
   background-color: black;
   color: white;
   padding: 30px;
+  z-index: 10;
 }
 .header__logo {
   width: 100px;
+  position: relative;
+  z-index: 10;
 }
 .header__hamburguer {
   z-index: 10;
@@ -22,15 +25,25 @@
 .header__nav {
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 500px;
+  top: -60rem;
+  left: 0;
   position: absolute;
-  background-color: aqua;
   transition: all 0.2s ease-in-out;
 }
 .header__nav.header__nav--active {
-  left: 50%;
+  left: 0;
   top: 0;
+}
+.header__ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 4.125rem;
+  background-color: black;
+  height: 100%;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=header.css.map */
