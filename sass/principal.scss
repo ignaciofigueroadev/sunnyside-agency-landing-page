@@ -1,0 +1,33 @@
+@import "mixins";
+@import "variables";
+
+.principal {
+  &__orange {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__welcome {
+    width: 100%;
+    @include flexBox(flex, column, center, center, no-wrap, 1rem);
+    position: relative;
+    top: 80px;
+    z-index: 10;
+  }
+
+  &__title {
+    margin: 0 4.75rem 0 4.75rem;
+    color: $White;
+    text-align: center;
+    line-height: 5.625rem;
+    font-size: 3.0625rem;
+    font-family: $Fraunces-font;
+    font-weight: $Font-weight-900;
+    text-transform: uppercase;
+  }
+
+  &__arrow {
+    width: 50px;
+  }
+}

@@ -1,6 +1,6 @@
-const headerButton = document.querySelector(".header__hamburguer");
-const headerNav = document.querySelector(".header__nav");
+const hamburguerButton = document.querySelector(".header__hamburguer");
+const navBar = document.querySelector(".header__nav");
 
-headerButton.addEventListener("click", () => {
-  headerNav.classList.toggle("header__nav--active");
+hamburguerButton.addEventListener("click", () => {
+  navBar.classList.toggle("header__nav--active");
 });

@@ -2,44 +2,65 @@
 @import "variables";
 
 .header {
-  @include flexBox(flex, row, space-between, center, nowrap, 0);
-  background-color: black;
-  color: white;
-  padding: 30px;
+  width: 100%;
+  @include flexBox(flex, row, space-between, center, wrap, 0);
   z-index: 10;
+  padding: 1.5rem;
 
   &__logo {
-    width: 100px;
     position: relative;
-    z-index: 10;
+    width: 12.5rem;
+    z-index: 20;
   }
-
   &__hamburguer {
-    z-index: 10;
-  }
-
-  &__hamburguer:hover {
+    display: none;
     cursor: pointer;
+    z-index: 30;
   }
 
   &__nav {
-    width: 100%;
-    height: 100%;
-    top: -60rem;
-    left: 0;
-    position: absolute;
-    transition: all 0.2s ease-in-out;
-  }
-
-  &__nav.header__nav--active {
-    left: 0;
-    top: 0;
+    color: $White;
+    z-index: 20;
   }
 
   &__ul {
-    @include flexBox(flex, column, center, center, nowrap, 4.125rem);
-    background-color: black;
-    height: 100%;
-    font-size: 25px;
+    @include flexBox(flex, row, center, center, no-wrap, 1.25rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    &__nav {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 31.25rem;
+      transition: all 0.5s ease;
+      z-index: 20;
+      background-color: $White;
+      opacity: 0.7;
+    }
+
+    &__nav.header__nav--active {
+      left: 0;
+    }
+
+    &__hamburguer {
+      display: block;
+    }
+
+    &__nav {
+      color: $Very-dark-desaturated-blue;
+    }
+
+    &__ul {
+      @include flexBox(flex, column, center, center, no-wrap, 5rem);
+      margin-top: 10rem;
+    }
+
+    &__li {
+      font-size: 1.75rem;
+    }
   }
 }

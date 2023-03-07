@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/_variables.scss","../sass/principal.scss","../sass/_mixins.scss"],"names":[],"mappings":"AAAQ;ACIN;EACE;EACA;EACA;;AAGF;EACE;ECVF,SDWmB;ECVnB,gBDUyB;ECTzB,iBDSiC;ECRjC,aDQyC;ECPzC,WDOiD;ECNjD,KDM0D;EACxD;EACA;EACA;;AAGF;EACE;EACA,ODRI;ECSJ;EACA;EACA;EACA,aDRY;ECSZ,aDJc;ECKd;;AAGF;EACE","file":"principal.css"}
