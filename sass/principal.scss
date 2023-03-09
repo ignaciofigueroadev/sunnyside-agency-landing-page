@@ -3,10 +3,9 @@
 
 .principal {
   &__orange {
-    position: absolute;
-    inset: 0;
     background-position: 100%;
     background-repeat: no-repeat;
+    height: calc(100svh - 100px);
   }
 
   &__orange--desktop {
@@ -16,9 +15,12 @@
   &__welcome {
     width: 100%;
     @include flexBox(flex, column, center, center, no-wrap, 1rem);
-    position: relative;
-    top: 5rem;
+    position: absolute;
+    top: 300px;
     z-index: 10;
+    h1 {
+      font-size: 52px;
+    }
   }
 
   &__title {
@@ -33,12 +35,24 @@
   }
 
   &__arrow {
-    width: 2.5rem;
+    margin-top: 120px;
+    width: 3rem;
   }
 }
 
 @media screen and (min-width: 850px) {
   .principal {
+    &__welcome {
+      h1 {
+        font-size: 72px;
+        letter-spacing: 15px;
+      }
+    }
+
+    &__arrow {
+      margin-top: 100px;
+    }
+
     &__orange--mobile {
       display: none;
     }

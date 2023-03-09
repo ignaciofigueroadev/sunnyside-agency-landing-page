@@ -1,59 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/principal.css" />
+    <script src="./js/main.js" defer></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/principal.css">
-  <script src="./js/main.js" defer></script>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
 
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header__picture">
+        <img src="images/logo.svg" alt="Logo" class="header__logo" />
+      </div>
 
-<body>
-  <header class="header">
-    <div class="header__picture">
-      <img src="images/logo.svg" alt="Logo" class="header__logo">
+      <button class="header__hamburguer">
+        <img
+          src="images/icon-hamburger.svg"
+          alt="Menu"
+          class="header__menu"
+          loading="lazy"
+        />
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li class="header__li"><a href="#" class="header__item">About</a></li>
+          <li class="header__li">
+            <a href="#" class="header__item">Services</a>
+          </li>
+          <li class="header__li">
+            <a href="#" class="header__item">Projects</a>
+          </li>
+          <li class="header__li">
+            <button class="header__button">Contact</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="principal">
+      <div class="principal__welcome">
+        <h1 class="principal__title">We are creatives</h1>
+        <img
+          src="images/icon-arrow-down.svg"
+          alt="Arrow"
+          class="principal__arrow"
+        />
+      </div>
+      <img
+        src="images/mobile/image-header.jpg"
+        alt="Orange"
+        loading="lazy"
+        class="principal__orange principal__orange--mobile"
+      />
+      <img
+        src="images/desktop/image-header.jpg"
+        alt="Orange"
+        class="principal__orange principal__orange--desktop"
+      />
     </div>
 
-    <button class="header__hamburguer">
-      <img src="images/icon-hamburger.svg" alt="Menu" class="header__menu" loading="lazy">
-    </button>
-
-    <nav class="header__nav">
-      <ul class="header__ul">
-        <li class="header__li"><a href="#" class="header__item">About</a></li>
-        <li class="header__li"><a href="#" class="header__item">Services</a></li>
-        <li class="header__li"><a href="#" class="header__item">Projects</a></li>
-        <li class="header__li"><button class="header__button">Contact</button></li>
-      </ul>
-    </nav>
-
-
-  </header>
-
-  <div class="principal">
-    <img src="images/mobile/image-header.jpg" alt="Orange" loading="lazy"
-      class="principal__orange principal__orange--mobile">
-    <img src="images/desktop/image-header.jpg" alt="Orange" class="principal__orange principal__orange--desktop">
-    <div class="principal__welcome">
-      <h1 class="principal__title">We are creatives</h1>
-      <img src="images/icon-arrow-down.svg" alt="Arrow" class="principal__arrow">
-    </div>
-  </div>
-
-
-
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-
-</body>
-
+  </body>
 </html>
 
 <!-- 

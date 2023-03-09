@@ -3,6 +3,8 @@
 
 .header {
   width: 100%;
+  height: 100px;
+  background-color: $Light-blue;
   @include flexBox(flex, row, space-between, center, no-wrap, 0);
   z-index: 10;
   padding: 1.5rem;
