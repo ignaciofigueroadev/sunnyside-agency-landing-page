@@ -3,16 +3,17 @@
 
 .header {
   width: 100%;
-  @include flexBox(flex, row, space-between, center, wrap, 0);
+  @include flexBox(flex, row, space-between, center, no-wrap, 0);
   z-index: 10;
   padding: 1.5rem;
 
   &__logo {
-    position: relative;
     width: 12.5rem;
     z-index: 20;
+    position: relative;
   }
   &__hamburguer {
+    width: 1.875rem;
     display: none;
     cursor: pointer;
     z-index: 30;
@@ -24,22 +25,54 @@
   }
 
   &__ul {
-    @include flexBox(flex, row, center, center, no-wrap, 1.25rem);
+    @include flexBox(flex, row, center, center, no-wrap, 3rem);
+    font-weight: $Font-weight-900;
+  }
+
+  &__li {
+    font-size: 1.2rem;
+  }
+
+  &__item {
+    transition: text-decoration 0.3s ease;
+  }
+
+  &__item:hover {
+    text-decoration: underline 3px;
+  }
+
+  &__button {
+    background-color: $White;
+    color: $Very-dark-desaturated-blue;
+    padding: 0.75rem;
+    border-radius: 3rem;
+    border: 1px solid $White;
+    transition: all 0.2s ease;
+    font-family: $Fraunces-font;
+    width: 8.5rem;
+  }
+
+  &__button:hover {
+    border: 1px solid $White;
+    background-color: transparent;
+    color: $White;
+    cursor: pointer;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 740px) {
   .header {
     &__nav {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 0;
-      left: 31.25rem;
-      transition: all 0.5s ease;
+      left: 40rem;
+      transition: all 0.3s ease;
       z-index: 20;
-      background-color: $White;
-      opacity: 0.7;
+      background-color: $Light-blue;
+      opacity: 0.9;
+      color: $White;
     }
 
     &__nav.header__nav--active {
@@ -48,10 +81,6 @@
 
     &__hamburguer {
       display: block;
-    }
-
-    &__nav {
-      color: $Very-dark-desaturated-blue;
     }
 
     &__ul {
