@@ -9,7 +9,7 @@
   background-color: $Light-blue;
 
   &__logo {
-    width: 12.5rem;
+    width: 8.5rem;
     z-index: 20;
     position: relative;
   }
@@ -77,13 +77,14 @@
       color: $White;
       visibility: hidden;
       opacity: 0;
-      transform: translate(100%);
+      overflow-x: hidden;
+      transform: translateX(100%);
     }
 
     &__nav.header__nav--active {
       visibility: visible;
       opacity: 1;
-      transform: translate(0);
+      transform: translateX(0);
     }
 
     &__toggle {
