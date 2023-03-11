@@ -1,46 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
-.principal__orange {
-  position: absolute;
-  inset: 0;
-  background-position: 100%;
+.principal {
+  min-height: 100vh;
+  background-image: url("../images/mobile/image-header.jpg");
   background-repeat: no-repeat;
-}
-.principal__orange--desktop {
-  display: none;
+  background-size: 100%;
+  background-clip: border-box;
 }
 .principal__welcome {
-  width: 100%;
+  width: 70%;
+  margin: auto;
+  white-space: pre-wrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
-  gap: 1rem;
-  position: relative;
-  top: 5rem;
-  z-index: 10;
+  gap: 3.5em;
+  padding: 3.375rem 0 0 0;
+  text-align: center;
 }
 .principal__title {
-  margin: 0 4.75rem 0 4.75rem;
-  color: #ffffff;
-  text-align: center;
-  line-height: 5.625rem;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-family: "Fraunces", serif;
   font-weight: 900;
   text-transform: uppercase;
+  color: #ffffff;
+  line-height: 6.25rem;
 }
 .principal__arrow {
-  width: 2.5rem;
+  width: 50px;
 }
 
-@media screen and (min-width: 850px) {
-  .principal__orange--mobile {
-    display: none;
-  }
-  .principal__orange--desktop {
-    display: block;
-    width: 100%;
+@media screen and (min-width: 1024px) {
+  .principal {
+    background-image: url("../images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 

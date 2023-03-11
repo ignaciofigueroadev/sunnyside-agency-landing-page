@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/principal.css">
-  <script src="./js/main.js" defer></script>
+  <script src="js/main.js" defer></script>
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
@@ -19,11 +19,11 @@
       <img src="images/logo.svg" alt="Logo" class="header__logo">
     </div>
 
-    <button class="header__hamburguer">
+    <button class="header__toggle" id="nav-toggle">
       <img src="images/icon-hamburger.svg" alt="Menu" class="header__menu" loading="lazy">
     </button>
 
-    <nav class="header__nav">
+    <nav class="header__nav" id="nav-menu">
       <ul class="header__ul">
         <li class="header__li"><a href="#" class="header__item">About</a></li>
         <li class="header__li"><a href="#" class="header__item">Services</a></li>
@@ -31,21 +31,14 @@
         <li class="header__li"><button class="header__button">Contact</button></li>
       </ul>
     </nav>
-
-
   </header>
 
   <div class="principal">
-    <img src="images/mobile/image-header.jpg" alt="Orange" loading="lazy"
-      class="principal__orange principal__orange--mobile">
-    <img src="images/desktop/image-header.jpg" alt="Orange" class="principal__orange principal__orange--desktop">
     <div class="principal__welcome">
       <h1 class="principal__title">We are creatives</h1>
       <img src="images/icon-arrow-down.svg" alt="Arrow" class="principal__arrow">
     </div>
   </div>
-
-
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

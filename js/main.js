@@ -1,4 +1,4 @@
-const hamburguerButton = document.querySelector(".header__hamburguer");
+const hamburguerButton = document.querySelector(".header__toggle");
 const navBar = document.querySelector(".header__nav");
 
 hamburguerButton.addEventListener("click", () => {

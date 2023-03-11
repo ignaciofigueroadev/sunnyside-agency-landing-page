@@ -2,50 +2,39 @@
 @import "variables";
 
 .principal {
-  &__orange {
-    position: absolute;
-    inset: 0;
-    background-position: 100%;
-    background-repeat: no-repeat;
-  }
-
-  &__orange--desktop {
-    display: none;
-  }
+  min-height: 100vh;
+  background-image: url("../images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: border-box;
 
   &__welcome {
-    width: 100%;
-    @include flexBox(flex, column, center, center, no-wrap, 1rem);
-    position: relative;
-    top: 5rem;
-    z-index: 10;
+    width: 70%;
+    margin: auto;
+    white-space: pre-wrap;
+    @include flexBox(flex, column, center, center, no-wrap, 3.5em);
+    padding: 3.375rem 0 0 0;
+    text-align: center;
   }
 
   &__title {
-    margin: 0 4.75rem 0 4.75rem;
-    color: $White;
-    text-align: center;
-    line-height: 5.625rem;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-family: $Fraunces-font;
     font-weight: $Font-weight-900;
     text-transform: uppercase;
+    color: $White;
+    line-height: 6.25rem;
   }
 
   &__arrow {
-    width: 2.5rem;
+    width: 50px;
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .principal {
-    &__orange--mobile {
-      display: none;
-    }
-
-    &__orange--desktop {
-      display: block;
-      width: 100%;
-    }
+    background-image: url("../images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }

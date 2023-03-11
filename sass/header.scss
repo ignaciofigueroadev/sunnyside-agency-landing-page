@@ -5,14 +5,15 @@
   width: 100%;
   @include flexBox(flex, row, space-between, center, no-wrap, 0);
   z-index: 10;
-  padding: 1.5rem;
+  padding: 2rem;
+  background-color: $Light-blue;
 
   &__logo {
     width: 12.5rem;
     z-index: 20;
     position: relative;
   }
-  &__hamburguer {
+  &__toggle {
     width: 1.875rem;
     display: none;
     cursor: pointer;
@@ -21,7 +22,7 @@
 
   &__nav {
     color: $White;
-    z-index: 20;
+    z-index: 40;
   }
 
   &__ul {
@@ -60,26 +61,32 @@
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1024px) {
   .header {
+    padding: 2em;
+
     &__nav {
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       position: absolute;
       top: 0;
-      left: 40rem;
+      left: 0;
       transition: all 0.3s ease;
       z-index: 20;
       background-color: $Light-blue;
-      opacity: 0.9;
       color: $White;
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(100%);
     }
 
     &__nav.header__nav--active {
-      left: 0;
+      visibility: visible;
+      opacity: 1;
+      transform: translate(0);
     }
 
-    &__hamburguer {
+    &__toggle {
       display: block;
     }
 
