@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+html,
+body {
+  overflow-x: hidden;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -10,6 +15,9 @@
   z-index: 10;
   padding: 2rem;
   background-color: #3ebfff;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .header__logo {
   width: 8.5rem;
@@ -75,15 +83,11 @@
     z-index: 20;
     background-color: #3ebfff;
     color: #ffffff;
-    visibility: hidden;
-    opacity: 0;
     overflow-x: hidden;
     transform: translateX(100%);
   }
   .header__nav.header__nav--active {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   .header__toggle {
     display: block;

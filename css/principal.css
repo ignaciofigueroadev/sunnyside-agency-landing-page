@@ -15,8 +15,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
-  gap: 3.5em;
-  padding: 3.375rem 0 0 0;
+  gap: 1.5em;
+  padding: 6.375rem 0 0 0;
   text-align: center;
 }
 .principal__title {
@@ -36,6 +36,9 @@
     background-image: url("../images/desktop/image-header.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  .principal__welcome {
+    padding: 12.375rem 0 0 0;
   }
 }
 

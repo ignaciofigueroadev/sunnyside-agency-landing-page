@@ -12,8 +12,8 @@
     width: 70%;
     margin: auto;
     white-space: pre-wrap;
-    @include flexBox(flex, column, center, center, no-wrap, 3.5em);
-    padding: 3.375rem 0 0 0;
+    @include flexBox(flex, column, center, center, no-wrap, 1.5em);
+    padding: 6.375rem 0 0 0;
     text-align: center;
   }
 
@@ -36,5 +36,9 @@
     background-image: url("../images/desktop/image-header.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    &__welcome {
+      padding: 12.375rem 0 0 0;
+    }
   }
 }
