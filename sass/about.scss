@@ -20,31 +20,52 @@
     line-height: 2.5rem;
     font-family: $Fraunces-font;
     font-weight: $Font-weight-900;
+    color: $Very-dark-desaturated-blue;
   }
 
   &__text {
     color: $Dark-grayish-blue;
     font-family: $Barlow-font;
+    font-size: 1.25rem;
+    line-height: 30px;
+    padding: 0 20px 0 20px;
   }
 
-  &__button {
+  &__link {
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+    position: relative;
     font-family: $Fraunces-font;
-    text-transform: uppercase;
     font-weight: $Font-weight-900;
+    text-transform: uppercase;
+    color: $Very-dark-desaturated-blue;
     cursor: pointer;
+    font-size: 1.25rem;
   }
 
-  &__button::before {
+  &__link::before {
     content: "";
     position: absolute;
-    bottom: 0.3rem;
-    left: 0;
     width: 100%;
-    height: 0.7rem;
-    background: hsla(51, 100%, 49%, 0.404);
-    z-index: -1;
-    border-radius: 0.5rem;
-    transition: 0.35s;
+    height: 10px;
+    border-radius: 8px;
+    bottom: -3px;
+    left: 0;
+    opacity: 0.3;
+    transition: 0.2s;
+  }
+
+  &__link--yellow::before {
+    background-color: $Yellow;
+  }
+
+  &__link--red::before {
+    background-color: $Soft-red;
+  }
+
+  &__link:hover::before {
+    opacity: 0.5;
   }
 }
 

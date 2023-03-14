@@ -99,12 +99,12 @@ body {
     }
 
     &__ul {
-      @include flexBox(flex, column, center, flex-start, no-wrap, 8rem);
+      @include flexBox(flex, column, center, flex-start, no-wrap, 5rem);
       padding: 10rem 0 0 7rem;
     }
 
     &__li {
-      font-size: 1.75rem;
+      font-size: 1.2rem;
     }
 
     &__button {

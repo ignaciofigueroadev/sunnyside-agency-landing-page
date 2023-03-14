@@ -22,28 +22,46 @@
   line-height: 2.5rem;
   font-family: "Fraunces", serif;
   font-weight: 900;
+  color: hsl(212, 27%, 19%);
 }
 .about__text {
   color: #818498;
   font-family: "Barlow", sans-serif;
+  font-size: 1.25rem;
+  line-height: 30px;
+  padding: 0 20px 0 20px;
 }
-.about__button {
+.about__link {
+  width: fit-content;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
+  position: relative;
   font-family: "Fraunces", serif;
-  text-transform: uppercase;
   font-weight: 900;
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
   cursor: pointer;
+  font-size: 1.25rem;
 }
-.about__button::before {
+.about__link::before {
   content: "";
   position: absolute;
-  bottom: 0.3rem;
-  left: 0;
   width: 100%;
-  height: 0.7rem;
-  background: hsla(51, 100%, 49%, 0.404);
-  z-index: -1;
-  border-radius: 0.5rem;
-  transition: 0.35s;
+  height: 10px;
+  border-radius: 8px;
+  bottom: -3px;
+  left: 0;
+  opacity: 0.3;
+  transition: 0.2s;
+}
+.about__link--yellow::before {
+  background-color: hsl(51, 100%, 49%);
+}
+.about__link--red::before {
+  background-color: #fe7867;
+}
+.about__link:hover::before {
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 810px) {

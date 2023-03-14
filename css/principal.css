@@ -28,7 +28,19 @@
   letter-spacing: 2px;
 }
 .principal__arrow {
-  width: 30px;
+  width: 50px;
+  animation: arrow infinite ease-in-out 1s;
+}
+@keyframes arrow {
+  0% {
+    transform: translateY(3.125rem);
+  }
+  50% {
+    transform: translateY(4.375rem);
+  }
+  100% {
+    transform: translateY(3.125rem);
+  }
 }
 
 @media screen and (min-width: 1024px) {

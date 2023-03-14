@@ -102,11 +102,11 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: no-wrap;
-    gap: 8rem;
+    gap: 5rem;
     padding: 10rem 0 0 7rem;
   }
   .header__li {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
   }
   .header__button {
     padding: 20px;
