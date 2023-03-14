@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/principal.css">
+  <link rel="stylesheet" href="css/about.css">
   <script src="js/main.js" defer></script>
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -19,13 +20,13 @@
       <img src="images/logo.svg" alt="Logo" class="header__logo">
     </div>
 
-    <button class="header__toggle" id="nav-toggle">
+    <button class="header__toggle">
       <img src="images/icon-hamburger.svg" alt="Menu" class="header__menu" loading="lazy">
     </button>
 
-    <nav class="header__nav" id="nav-menu">
+    <nav class="header__nav">
       <ul class="header__ul">
-        <li class="header__li"><a href="#projects" class="header__item">About</a></li>
+        <li class="header__li"><a href="#about" class="header__item">About</a></li>
         <li class="header__li"><a href="#" class="header__item">Services</a></li>
         <li class="header__li"><a href="#" class="header__item">Projects</a></li>
         <li class="header__li"><button class="header__button">Contact</button></li>
@@ -33,12 +34,38 @@
     </nav>
   </header>
 
-  <div class="principal">
+  <section class="principal">
     <div class="principal__welcome">
       <h1 class="principal__title">We are creatives</h1>
       <img src="images/icon-arrow-down.svg" alt="Arrow" class="principal__arrow">
     </div>
-  </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="about__images about__images--col1">
+      <img src="images/mobile/image-transform.jpg" alt="Egg image" class="about__photo about__image--mobile">
+    </div>
+    <section class="about__info about__info--col1">
+      <h3 class="about__title">Transform your brand</h3>
+      <p class="about__text">We are a full-service creative agency specializing in helping brands grow fast.
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <button class="about__button">Learn more</button>
+    </section>
+
+    <div class="about__images about__images--col2">
+      <img src="images/mobile/image-stand-out.jpg" alt="Cup image" class="about__photo">
+    </div>
+    <section class="about__info about__info--col2">
+      <h3 class="about__title">Stand out to the right audience
+      </h3>
+      <p class="about__text">Using a collaborative formula of designers, researchers, photographers, videographers, and
+        copywriters, we’ll build and
+        extend your brand in digital places.</p>
+      <button class="about__button">Learn more</button>
+    </section>
+
+  </section>
 
 </body>
 
@@ -52,18 +79,13 @@
 
   We are creatives
 
-  Transform your brand
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+ 
 
-  Learn more
 
-  Stand out to the right audience
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+  
 
-  Learn more
 
   Graphic design
   Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.

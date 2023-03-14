@@ -10,7 +10,7 @@ body {
   width: 100%;
   @include flexBox(flex, row, space-between, center, no-wrap, 0);
   z-index: 10;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: $Light-blue;
   position: fixed;
   top: 0;
@@ -58,7 +58,8 @@ body {
     border: 1px solid $White;
     transition: all 0.2s ease;
     font-family: $Fraunces-font;
-    width: 8.5rem;
+    width: 10.5rem;
+    text-transform: uppercase;
   }
 
   &__button:hover {
@@ -83,12 +84,14 @@ body {
       z-index: 20;
       background-color: $Light-blue;
       color: $White;
+      text-transform: uppercase;
       overflow-x: hidden;
       transform: translateX(100%);
+      opacity: 0;
     }
-
     &__nav.header__nav--active {
-      transform: translateX(0%);
+      transform: translateX(30%);
+      opacity: 1;
     }
 
     &__toggle {
@@ -96,12 +99,17 @@ body {
     }
 
     &__ul {
-      @include flexBox(flex, column, center, center, no-wrap, 5rem);
-      margin-top: 10rem;
+      @include flexBox(flex, column, center, flex-start, no-wrap, 8rem);
+      padding: 10rem 0 0 7rem;
     }
 
     &__li {
       font-size: 1.75rem;
+    }
+
+    &__button {
+      padding: 20px;
+      width: 11.5rem;
     }
   }
 }

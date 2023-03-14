@@ -1,22 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 .principal {
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../images/mobile/image-header.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-clip: border-box;
+  background-position: center;
+  background-size: cover;
 }
 .principal__welcome {
   width: 70%;
   margin: auto;
-  white-space: pre-wrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
   gap: 1.5em;
-  padding: 6.375rem 0 0 0;
+  padding: 15.375rem 0 0 0;
   text-align: center;
 }
 .principal__title {
@@ -26,19 +25,24 @@
   text-transform: uppercase;
   color: #ffffff;
   line-height: 6.25rem;
+  letter-spacing: 2px;
 }
 .principal__arrow {
-  width: 50px;
+  width: 30px;
 }
 
 @media screen and (min-width: 1024px) {
   .principal {
     background-image: url("../images/desktop/image-header.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
   .principal__welcome {
-    padding: 12.375rem 0 0 0;
+    padding: 10.375rem 0 0 0;
+  }
+  .principal__title {
+    font-size: 3.75rem;
+    letter-spacing: 0.625rem;
   }
 }
 

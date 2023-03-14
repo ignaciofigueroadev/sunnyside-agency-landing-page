@@ -2,18 +2,17 @@
 @import "variables";
 
 .principal {
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../images/mobile/image-header.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-clip: border-box;
+  background-position: center;
+  background-size: cover;
 
   &__welcome {
     width: 70%;
     margin: auto;
-    white-space: pre-wrap;
     @include flexBox(flex, column, center, center, no-wrap, 1.5em);
-    padding: 6.375rem 0 0 0;
+    padding: 15.375rem 0 0 0;
     text-align: center;
   }
 
@@ -24,10 +23,11 @@
     text-transform: uppercase;
     color: $White;
     line-height: 6.25rem;
+    letter-spacing: 2px;
   }
 
   &__arrow {
-    width: 50px;
+    width: 30px;
   }
 }
 
@@ -35,10 +35,15 @@
   .principal {
     background-image: url("../images/desktop/image-header.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     &__welcome {
-      padding: 12.375rem 0 0 0;
+      padding: 10.375rem 0 0 0;
+    }
+
+    &__title {
+      font-size: 3.75rem;
+      letter-spacing: 0.625rem;
     }
   }
 }

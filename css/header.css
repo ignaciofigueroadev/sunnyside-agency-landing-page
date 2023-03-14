@@ -13,7 +13,7 @@ body {
   flex-wrap: no-wrap;
   gap: 0;
   z-index: 10;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #3ebfff;
   position: fixed;
   top: 0;
@@ -60,7 +60,8 @@ body {
   border: 1px solid #ffffff;
   transition: all 0.2s ease;
   font-family: "Fraunces", serif;
-  width: 8.5rem;
+  width: 10.5rem;
+  text-transform: uppercase;
 }
 .header__button:hover {
   border: 1px solid #ffffff;
@@ -83,11 +84,14 @@ body {
     z-index: 20;
     background-color: #3ebfff;
     color: #ffffff;
+    text-transform: uppercase;
     overflow-x: hidden;
     transform: translateX(100%);
+    opacity: 0;
   }
   .header__nav.header__nav--active {
-    transform: translateX(0%);
+    transform: translateX(30%);
+    opacity: 1;
   }
   .header__toggle {
     display: block;
@@ -96,13 +100,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: no-wrap;
-    gap: 5rem;
-    margin-top: 10rem;
+    gap: 8rem;
+    padding: 10rem 0 0 7rem;
   }
   .header__li {
     font-size: 1.75rem;
+  }
+  .header__button {
+    padding: 20px;
+    width: 11.5rem;
   }
 }
 
