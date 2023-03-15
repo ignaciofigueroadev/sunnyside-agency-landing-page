@@ -13,11 +13,10 @@ body {
   flex-wrap: no-wrap;
   gap: 0;
   z-index: 10;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: #3ebfff;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
 }
 .header__logo {
   width: 8.5rem;
@@ -90,7 +89,7 @@ body {
     opacity: 0;
   }
   .header__nav.header__nav--active {
-    transform: translateX(30%);
+    transform: translateX(20%);
     opacity: 1;
   }
   .header__toggle {

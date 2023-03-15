@@ -27,8 +27,8 @@
     color: $Dark-grayish-blue;
     font-family: $Barlow-font;
     font-size: 1.25rem;
-    line-height: 30px;
-    padding: 0 20px 0 20px;
+    line-height: 1.875rem;
+    padding: 0 1.25rem 0 1.25rem;
   }
 
   &__link {
@@ -48,9 +48,9 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 10px;
-    border-radius: 8px;
-    bottom: -3px;
+    height: 0.625rem;
+    border-radius: 0.5rem;
+    bottom: -0.1875rem;
     left: 0;
     opacity: 0.3;
     transition: 0.2s;
@@ -88,6 +88,23 @@
 
     &__info--col2 {
       order: 4;
+    }
+
+    &__info {
+      @include flexBox(flex, column, center, flex-start, no-wrap, 3rem);
+    }
+
+    &__title,
+    &__link {
+      padding-left: 1.25rem;
+    }
+
+    &__link::before {
+      left: 0.3125rem;
+    }
+
+    &__text {
+      text-align: start;
     }
   }
 }

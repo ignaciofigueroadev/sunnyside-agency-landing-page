@@ -1,0 +1,65 @@
+@import "mixins";
+@import "variables";
+
+.services {
+  @include flexBox(flex, column, center, center, no-wrap, 0);
+
+  &__design {
+    min-height: 100vh;
+    background-image: url("/images/mobile/image-graphic-design.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $Dark-desaturated-cyan;
+  }
+
+  &__photography {
+    min-height: 100vh;
+    background-image: url("/images/mobile/image-photography.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $Dark-blue;
+  }
+
+  &__design,
+  &__photography {
+    @include flexBox(flex, column, flex-end, center, no-wrap, 4em);
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    font-family: $Fraunces-font;
+    font-weight: $Font-weight-900;
+  }
+
+  &__description {
+    padding: 0 2.5rem 3.125rem 2.5rem;
+    text-align: center;
+    font-size: 1.1875rem;
+    font-family: $Barlow-font;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__design {
+      min-height: 100vh;
+      background-image: url("/images/desktop/image-graphic-design.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    &__photography {
+      min-height: 100vh;
+      background-image: url("/images/desktop/image-photography.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    &__description {
+      padding: 0 6.25rem 3.125rem 6.25rem;
+    }
+  }
+}

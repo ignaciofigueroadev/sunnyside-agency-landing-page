@@ -10,11 +10,11 @@ body {
   width: 100%;
   @include flexBox(flex, row, space-between, center, no-wrap, 0);
   z-index: 10;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: $Light-blue;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
+  // left: 0;
 
   &__logo {
     width: 8.5rem;
@@ -90,7 +90,7 @@ body {
       opacity: 0;
     }
     &__nav.header__nav--active {
-      transform: translateX(30%);
+      transform: translateX(20%);
       opacity: 1;
     }
 

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 0;
+}
+.services__design {
+  min-height: 100vh;
+  background-image: url("/images/mobile/image-graphic-design.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #25564b;
+}
+.services__photography {
+  min-height: 100vh;
+  background-image: url("/images/mobile/image-photography.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #19536b;
+}
+.services__design, .services__photography {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 4em;
+}
+.services__title {
+  font-size: 1.875rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.services__description {
+  padding: 0 2.5rem 3.125rem 2.5rem;
+  text-align: center;
+  font-size: 1.1875rem;
+  font-family: "Barlow", sans-serif;
+}
+
+@media screen and (min-width: 765px) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services__design {
+    min-height: 100vh;
+    background-image: url("/images/desktop/image-graphic-design.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .services__photography {
+    min-height: 100vh;
+    background-image: url("/images/desktop/image-photography.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .services__description {
+    padding: 0 6.25rem 3.125rem 6.25rem;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */
