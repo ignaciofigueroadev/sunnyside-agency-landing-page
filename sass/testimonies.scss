@@ -2,6 +2,9 @@
 @import "variables";
 
 .testimonies {
+  width: 100%;
+  margin: auto;
+
   &__title {
     padding: 3.125rem 1.25rem 3.125rem 1.25rem;
     text-align: center;
@@ -13,7 +16,7 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 100%), 1fr));
     gap: 3.25rem;
   }
 
@@ -45,5 +48,13 @@
     font-family: $Barlow-font;
     color: $Grayish-blue;
     margin-top: -1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonies {
+    &__container {
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 30%), 1fr));
+    }
   }
 }
