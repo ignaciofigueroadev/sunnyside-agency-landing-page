@@ -11,9 +11,12 @@
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/testimonies.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/tooltip.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/56ff8a14de.js" crossorigin="anonymous" defer></script>
   <script src="js/main.js" defer></script>
-
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
@@ -32,65 +35,182 @@
       <ul class="header__ul">
         <li class="header__li"><a href="#about" class="header__item">About</a></li>
         <li class="header__li"><a href="#services" class="header__item">Services</a></li>
-        <li class="header__li"><a href="#" class="header__item">Projects</a></li>
+        <li class="header__li"><a href="#projects" class="header__item">Projects</a></li>
         <li class="header__li"><button class="header__button">Contact</button></li>
       </ul>
     </nav>
   </header>
 
-  <section class="principal">
-    <div class="principal__welcome" data-aos="zoom-in">
-      <h1 class="principal__title">We are creatives</h1>
-      <img src="images/icon-arrow-down.svg" alt="Arrow" class="principal__arrow" />
-    </div>
-  </section>
+  <main>
 
-  <section class="about" id="about">
-
-    <div class="about__images about__images--col1" data-aos="zoom-in">
-      <img src=" images/mobile/image-transform.jpg" alt="Egg image" class="about__photo about__image--mobile" />
-    </div>
-    <section class="about__info about__info--col1" data-aos="fade-right" data-aos-offset="300"
-      data-aos-easing="ease-in-sine">
-      <h2 class="about__title">Transform your brand</h2>
-      <p class="about__text">We are a full-service creative agency specializing in helping brands grow fast.
-        Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <a href="#" class="about__link about__link--yellow">Learn more</a>
+    <section class="principal">
+      <div class="principal__welcome" data-aos="zoom-in">
+        <h1 class="principal__title">We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="Arrow" class="principal__arrow" />
+      </div>
     </section>
 
-    <div class="about__images about__images--col2" data-aos="zoom-in">
-      <img src="images/mobile/image-stand-out.jpg" alt="Cup image" class="about__photo" />
-    </div>
-    <section class="about__info about__info--col2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-      data-aos-delay="300" data-aos-offset="0">
-      <h2 class="about__title">Stand out to the right audience</h2>
-      <p class="about__text">Using a collaborative formula of designers, researchers, photographers, videographers, and
-        copywriters, we’ll build and
-        extend your brand in digital places.</p>
-      <a href="#" class="about__link about__link--red">Learn more</a>
+    <section class="about" id="about">
+
+      <div class="about__images about__images--col1" data-aos="zoom-in">
+        <img src=" images/mobile/image-transform.jpg" loading="lazy" alt="Egg image"
+          class="about__photo about__photo--mobile" />
+        <img src="images/desktop/image-transform.jpg" loading="lazy" alt="Egg image"
+          class="about__photo about__photo--desktop" />
+      </div>
+      <section class="about__info about__info--col1" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        <h2 class="about__title">Transform your brand</h2>
+        <p class="about__text">We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#" class="about__link about__link--yellow">Learn more</a>
+      </section>
+
+      <div class="about__images about__images--col2" data-aos="zoom-in">
+        <img src="images/mobile/image-stand-out.jpg" loading="lazy" alt="Cup image"
+          class="about__photo about__photo--mobile" />
+        <img src="images/mobile/image-stand-out.jpg" loading="lazy" alt="Cup image"
+          class="about__photo about__photo--desktop" />
+      </div>
+      <section class="about__info about__info--col2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+        data-aos-delay="300" data-aos-offset="0">
+        <h2 class="about__title">Stand out to the right audience</h2>
+        <p class="about__text">Using a collaborative formula of designers, researchers, photographers, videographers,
+          and
+          copywriters, we’ll build and
+          extend your brand in digital places.</p>
+        <a href="#" class="about__link about__link--red">Learn more</a>
+      </section>
+
     </section>
 
-  </section>
+    <section class="services" id="services">
+      <div class="services__design" data-aos="fade-right">
+        <h3 class="services__title">Graphic Design</h3>
+        <p class="services__description">Great design makes you memorable. We deliver artwork that underscores your
+          brand
+          message and captures potential clients’attention.</p>
+      </div>
 
-  <section class="services" id="services">
-    <div class="services__design" data-aos="fade-right">
-      <h3 class="services__title">Graphic Design</h3>
-      <p class="services__description">Great design makes you memorable. We deliver artwork that underscores your brand
-        message and captures potential clients’attention.</p>
+      <div class="services__photography" data-aos="fade-left">
+        <h3 class="services__title">Photography</h3>
+        <p class="services__description">Increase your credibility by getting the most stunning, high-quality photos
+          that
+          improve your business image.</p>
+      </div>
+    </section>
+
+
+
+    <section class="testimonies" data-aos="zoom-in" id="projects">
+      <h3 class="testimonies__title">Client testimonials</h3>
+      <div class="testimonies__container">
+
+        <div class="testimonies__info">
+          <img src="images/image-emily.jpg" loading="lazy" alt="Emily's photo" class="testimonies__avatar" />
+          <p class="testimonies__description">We put our trust in Sunnyside and they delivered, making sure our needs
+            were
+            met and deadlines were always hit.</p>
+          <h4 class="testimonies__name">Emily R.</h4>
+          <span class="testimonies__profession">Marketing Director
+          </span>
+        </div>
+
+        <div class="testimonies__info">
+          <img src="images/image-thomas.jpg" loading="lazy" alt="Tomas's photo" class="testimonies__avatar" />
+          <p class="testimonies__description">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+            success
+            made it a satisfying and enjoyable
+            experience.
+          </p>
+          <h4 class="testimonies__name">Thomas S.
+          </h4>
+          <span class="testimonies__profession">Chief Operating Officer
+          </span>
+        </div>
+
+        <div class="testimonies__info">
+          <img src="images/image-jennie.jpg" loading="lazy" alt="Jennie's photo" class="testimonies__avatar" />
+          <p class="testimonies__description">Incredible end result! Our sales increased over 400% when we worked with
+            Sunnyside. Highly recommended!
+          </p>
+          <h4 class="testimonies__name">Jennie F.
+          </h4>
+          <span class="testimonies__profession">Business Owner
+          </span>
+        </div>
+
+      </div>
+
+      <div class="projects" data-aos="flip-right">
+        <div class="projects__container projects__container--mobile">
+          <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles">
+          <img src="images/mobile/image-gallery-orange.jpg" alt="Orange">
+          <img src="images/mobile/image-gallery-cone.jpg" alt="Cone">
+          <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
+        </div>
+      </div>
+      <div class="projects__container projects__container--desktop">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="Orange">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="Cone">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes">
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <a href="#">
+      <img src="images/logo.svg" alt="Logo" class="footer__logo">
+    </a>
+    <nav class="footer__nav">
+      <ul class="footer__ul">
+        <li class="footer__li"><a href="#about" class="footer__item">About</a></li>
+        <li class="footer__li"><a href="#services" class="footer__item">Services</a></li>
+        <li class="footer__li"><a href="#projects" class="footer__item">Projects</a></li>
+      </ul>
+      <div class="footer__socialmedias">
+        <a href="#">
+          <i class="fa-brands fa-square-facebook footer__icon"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram footer__icon"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter footer__icon"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-pinterest footer__icon"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="tooltip" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+      data-aos-offset="0">
+      <div class="tooltip__container">
+        <h3 class="tooltip__name">Ignacio Figueroa</h3>
+        <div class="tooltip__socialmedias">
+          <a href="https://twitter.com/ignaciodev_" target="_blank" rel="noopener noreferrer" class="tooltip__link"
+            title="Twitter">
+            <i class="fa-brands fa-twitter tooltip__icon tooltip__icon--twitter"></i>
+          </a>
+          <a href="https://github.com/ignaciofigueroadev" target="_blank" rel="noopener noreferrer"
+            class="tooltip__link" title="GitHub">
+            <i class="fa-brands fa-github tooltip__icon tooltip__icon--github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin tooltip__icon tooltip__icon--linkedin"></i>
+          </a>
+          <a href="https://www.frontendmentor.io/profile/ignaciofigueroadev" target="_blank" rel="noopener noreferrer">
+            <img src="images/favicon-32x32.png" alt="Frontend Mentor" class="tooltip__icon" title="Frontend Mentor">
+          </a>
+        </div>
+      </div>
+      <img src="images/ignaciodev.jpg" alt="Ignacio Figueroa" class="tooltip__img">
     </div>
-
-    <div class="services__photography" data-aos="fade-left">
-      <h3 class="services__title">Photography</h3>
-      <p class="services__description">Increase your credibility by getting the most stunning, high-quality photos that
-        improve your business image.</p>
-    </div>
-  </section>
-
-  <section class="testimonies">
-    <h3 class="testimonies__title">Client testimonials</h3>
-
-    div*3.testimonies__container>img:s.testimonies__avatar>
-  </section>
+  </footer>
 
 </body>
 
@@ -100,25 +220,3 @@
 </script>
 
 </html>
-
-<!-- 
- 
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
- -->

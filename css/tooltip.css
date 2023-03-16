@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip__img {
+  width: 90px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.tooltip__name {
+  font-family: "Barlow", sans-serif;
+}
+.tooltip .tooltip__container {
+  visibility: hidden;
+  width: 350px;
+  height: 160px;
+  background-color: #252525;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -1000px;
+  left: -125px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tooltip__container::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #252525;
+  position: absolute;
+  top: 150px;
+  left: 165px;
+}
+.tooltip__container.visible {
+  visibility: visible;
+  opacity: 1;
+  top: -200px;
+}
+.tooltip__socialmedias {
+  display: flex;
+  gap: 40px;
+}
+.tooltip__icon {
+  width: 30px;
+  font-size: 30px;
+  color: white;
+  transition: all 0.2s ease;
+}
+.tooltip .tooltip__icon:hover {
+  transform: scale(1.4);
+}
+
+.tooltip__icon--twitter:hover {
+  color: #1d9bf0;
+}
+
+.tooltip__icon--github:hover {
+  color: #c237db;
+}
+
+.tooltip__icon--linkedin:hover {
+  color: #0a66c2;
+}
+
+/*# sourceMappingURL=tooltip.css.map */

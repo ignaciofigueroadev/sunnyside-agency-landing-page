@@ -1,0 +1,48 @@
+@import "mixins";
+@import "variables";
+
+.testimonies {
+  &__title {
+    padding: 3.125rem 1.25rem 3.125rem 1.25rem;
+    text-align: center;
+    font-family: $Fraunces-font;
+    color: $Grayish-blue;
+    text-transform: uppercase;
+    letter-spacing: 0.3125rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    gap: 3.25rem;
+  }
+
+  &__info {
+    @include flexBox(flex, column, center, center, no-wrap, 2rem);
+    margin: auto;
+    padding: 0 3.75rem;
+  }
+
+  &__avatar {
+    width: 6.25rem;
+    border-radius: 50%;
+  }
+
+  &__description {
+    text-align: center;
+    color: $Very-dark-grayish-blue;
+    font-family: $Barlow-font;
+    line-height: 1.5625rem;
+  }
+
+  &__name {
+    font-family: $Fraunces-font;
+    font-weight: $Font-weight-900;
+  }
+
+  &__profession {
+    font-family: $Barlow-font;
+    color: $Grayish-blue;
+    margin-top: -1.25rem;
+  }
+}

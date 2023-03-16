@@ -8,6 +8,10 @@
   left: 0;
   position: relative;
 
+  &__photo--desktop {
+    display: none;
+  }
+
   &__info {
     @include flexBox(flex, column, center, center, no-wrap, 3rem);
     display: flex;
@@ -73,6 +77,14 @@
   .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    &__photo--mobile {
+      display: none;
+    }
+
+    &__photo--desktop {
+      display: block;
+    }
 
     &__images--col1 {
       order: 2;

@@ -1,0 +1,82 @@
+@import "variables";
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  &__img {
+    width: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__name {
+    font-family: $Barlow-font;
+  }
+
+  & &__container {
+    visibility: hidden;
+    width: 350px;
+    height: 160px;
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -1000px;
+    left: -125px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__container::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #252525;
+    position: absolute;
+    top: 150px;
+    left: 165px;
+  }
+
+  &__container.visible {
+    visibility: visible;
+    opacity: 1;
+    top: -200px;
+  }
+
+  &__socialmedias {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__icon {
+    width: 30px;
+    font-size: 30px;
+    color: white;
+    transition: all 0.2s ease;
+  }
+
+  .tooltip__icon:hover {
+    transform: scale(1.4);
+  }
+}
+
+.tooltip__icon--twitter:hover {
+  color: #1d9bf0;
+}
+
+.tooltip__icon--github:hover {
+  color: #c237db;
+}
+
+.tooltip__icon--linkedin:hover {
+  color: #0a66c2;
+}

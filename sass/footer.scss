@@ -1,0 +1,46 @@
+@import "mixins";
+@import "variables";
+
+.footer {
+  padding: 1.875rem;
+  background-color: $Footer-color;
+  @include flexBox(flex, column, center, center, no-wrap, 2rem);
+
+  &__logo {
+    width: 200px;
+  }
+
+  &__ul,
+  &__socialmedias {
+    @include flexBox(flex, row, center, center, no-wrap, 3rem);
+    color: $Dark-moderate-cyan;
+  }
+
+  &__ul {
+    font-family: $Barlow-font;
+  }
+
+  &__item {
+    &:hover {
+      transition: color, transform 0.2s ease;
+
+      color: $White;
+      transform: scale(1.2);
+    }
+  }
+
+  &__socialmedias {
+    margin-top: 2.5rem;
+  }
+
+  &__icon {
+    transition: color, transform 0.2s ease;
+    font-size: 1.5625rem;
+
+    &:hover {
+      color: $White;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+}

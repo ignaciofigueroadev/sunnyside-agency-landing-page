@@ -13,9 +13,9 @@ body {
   flex-wrap: no-wrap;
   gap: 0;
   z-index: 10;
-  padding: 1rem;
+  padding: 1rem 3rem;
   background-color: #3ebfff;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -47,10 +47,11 @@ body {
   font-size: 1.2rem;
 }
 .header__item {
-  transition: text-decoration 0.3s ease;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s ease;
 }
 .header__item:hover {
-  text-decoration: underline 3px;
+  border-bottom: 3px solid white;
 }
 .header__button {
   background-color: #ffffff;
@@ -111,6 +112,16 @@ body {
   .header__button {
     padding: 20px;
     width: 11.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: no-wrap;
+    gap: 0;
   }
 }
 

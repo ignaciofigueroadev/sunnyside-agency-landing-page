@@ -10,9 +10,9 @@ body {
   width: 100%;
   @include flexBox(flex, row, space-between, center, no-wrap, 0);
   z-index: 10;
-  padding: 1rem;
+  padding: 1rem 3rem;
   background-color: $Light-blue;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -43,11 +43,12 @@ body {
   }
 
   &__item {
-    transition: text-decoration 0.3s ease;
-  }
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s ease;
 
-  &__item:hover {
-    text-decoration: underline 3px;
+    &:hover {
+      border-bottom: 3px solid white;
+    }
   }
 
   &__button {
@@ -111,5 +112,11 @@ body {
       padding: 20px;
       width: 11.5rem;
     }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .header {
+    @include flexBox(flex, row, space-around, center, no-wrap, 0);
   }
 }

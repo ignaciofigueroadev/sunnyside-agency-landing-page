@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+.projects {
+  margin-top: 1.875rem;
+}
+.projects__container--desktop {
+  display: none;
+}
+.projects__container--mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__container--mobile {
+    display: none;
+  }
+  .projects__container--desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=projects.css.map */

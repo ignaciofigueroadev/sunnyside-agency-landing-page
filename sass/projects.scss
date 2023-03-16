@@ -1,0 +1,28 @@
+@import "mixins";
+@import "variables";
+
+.projects {
+  margin-top: 1.875rem;
+
+  &__container--desktop {
+    display: none;
+  }
+
+  &__container--mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects {
+    &__container--mobile {
+      display: none;
+    }
+
+    &__container--desktop {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

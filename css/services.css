@@ -8,14 +8,14 @@
   gap: 0;
 }
 .services__design {
-  min-height: 100vh;
+  min-height: 60vh;
   background-image: url("../images/mobile/image-graphic-design.jpg");
   background-position: center;
   background-size: cover;
   color: #25564b;
 }
 .services__photography {
-  min-height: 100vh;
+  min-height: 60vh;
   background-image: url("../images/mobile/image-photography.jpg");
   background-position: center;
   background-size: cover;

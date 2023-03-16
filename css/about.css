@@ -6,6 +6,9 @@
   left: 0;
   position: relative;
 }
+.about__photo--desktop {
+  display: none;
+}
 .about__info {
   display: flex;
   flex-direction: column;
@@ -68,6 +71,12 @@
   .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about__photo--mobile {
+    display: none;
+  }
+  .about__photo--desktop {
+    display: block;
   }
   .about__images--col1 {
     order: 2;
